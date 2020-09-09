@@ -3,6 +3,7 @@
 <div id="app">
     <p> {{ titulo}}</p>
     <p> {{ saudacoes()}}</p>
+    <a v-bind:href="link">Google</a>
 
 </div>
 
@@ -11,6 +12,7 @@
     el: '#app',
     data: {
         titulo: 'Usando VueJs',
+        link: 'https://google.com.br'
     },
     methods: {
         saudacoes: function(){
